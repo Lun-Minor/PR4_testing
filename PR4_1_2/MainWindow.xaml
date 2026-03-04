@@ -7,6 +7,53 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock Text=""/>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Visibility="Collapsed"/>
+        <Grid Margin="5" x:Name="mainContent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Text="Вариант 7" FontSize="17" FontWeight="Bold" HorizontalAlignment="Center" Margin="5" TextAlignment="Center"/>
+
+            
+            <Border Grid.Row="1" HorizontalAlignment="Center" Margin="5">
+
+                <Image Source="C:\Users\Lun\Pictures\Screenshots\Снимок экрана 2026-03-03 212929.png" Stretch="Uniform" MaxHeight="120"/>
+            </Border>
+
+
+            <StackPanel Grid.Row="2" Orientation="Vertical" HorizontalAlignment="Center" MaxWidth="520">
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <TextBlock Text="x =" Width="100" FontSize="14" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbX" Width="240" FontSize="14" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <TextBlock Text="y =" Width="100" FontSize="14" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbY" Width="240" FontSize="14"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <TextBlock Text="z =" Width="100" FontSize="14" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbZ" Width="240" FontSize="14" 
+                     />
+                </StackPanel>
+
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                    <Button x:Name="btnCalculate" Content="Вычислить" Width="170" Height="44" Margin="15" FontSize="15" Click="btnCalculate_Click"/>
+                    <Button x:Name="btnClear" Content="Очистить" Width="170" Height="44" FontSize="15" Click="btnClear_Click"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <TextBlock Text="Результат" FontSize="14"/>
+                    <TextBlock Text="y =" Width="50" FontSize="16" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbResult" Width="360" FontSize="16" FontWeight="SemiBold" IsReadOnly="True" />
+                </StackPanel>
+                <Button Content="Переход к 2 задаче" Width="130" x:Name="btn_Go2SecondPage" Click="btn_Go2SecondPage_Click"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

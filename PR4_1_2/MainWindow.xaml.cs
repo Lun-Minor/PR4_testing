@@ -24,6 +24,20 @@ namespace PR4_1_2
         {
             InitializeComponent();
         }
+
+        private void btnCalculate_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("svdv xc");
+        }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("svdv xc");
+        }
+
+        private void btn_Go2SecondPage_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("svdv xc");
+        }
     }
 }
-///fdfb
