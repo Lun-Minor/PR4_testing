@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PR4_1_2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="470" Width="800">
     <Grid>
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Visibility="Collapsed"/>
         <Grid Margin="5" x:Name="mainContent">
@@ -52,7 +52,7 @@
                     <TextBlock Text="y =" Width="50" FontSize="16" FontWeight="SemiBold" VerticalAlignment="Center"/>
                     <TextBox x:Name="tbResult" Width="360" FontSize="16" FontWeight="SemiBold" IsReadOnly="True" />
                 </StackPanel>
-                <Button Content="Переход к 2 задаче" Width="130" x:Name="btn_Go2SecondPage" Click="btn_Go2SecondPage_Click"/>
+                <Button Content="Переход к 2 задаче" Width="170" x:Name="btn_Go2SecondPage" Click="btn_Go2SecondPage_Click"  Height="44" FontSize="15"/>
             </StackPanel>
         </Grid>
     </Grid>
