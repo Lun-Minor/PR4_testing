@@ -1,0 +1,67 @@
+﻿<Page x:Class="PR4_1_2.SecondPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PR4_1_2"
+      mc:Ignorable="d" 
+      d:DesignHeight="470" d:DesignWidth="800"
+      Title="SecondPage">
+
+    <Grid Margin="5" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+
+
+        
+        <Border Grid.Row="1"
+BorderBrush="Gray" BorderThickness="1" Background="#F9FAFB" HorizontalAlignment="Center" Margin="10">
+            <Image Source="C:\Users\Lun\Pictures\Screenshots\Снимок экрана 2026-03-03 212944.png" Stretch="Uniform" MaxHeight="100"/>
+        </Border>
+
+
+        
+        <GroupBox Grid.Row="2" Header="Выберите функцию f(x)" Margin="5">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <RadioButton x:Name="rbSinh" Content="sh(x)" GroupName="fGroup" Margin="5" IsChecked="True"/>
+                <RadioButton x:Name="rbX2"   Content="x²"    GroupName="fGroup" Margin="5"/>
+                <RadioButton x:Name="rbExp"  Content="e^x"   GroupName="fGroup" Margin="5"/>
+            </StackPanel>
+        </GroupBox>
+
+        
+        <StackPanel Grid.Row="2" Orientation="Vertical" HorizontalAlignment="Center" Margin="40">
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="x =" Width="80" VerticalAlignment="Center" FontSize="14"/>
+                <TextBox x:Name="tbX" Width="220" FontSize="14"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="b =" Width="80" VerticalAlignment="Center" FontSize="14"/>
+                <TextBox x:Name="tbB" Width="220" FontSize="14" />
+            </StackPanel>
+
+       
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                <Button Content="Вычислить" Width="140" Height="40" Margin="10" Click="btnCalculate_Click" FontSize="14"/>
+                <Button Content="Очистить" Width="140" Height="40" Click="btnClear_Click" FontSize="14"/>
+            </StackPanel>
+
+       
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Результат s =" Width="80" FontSize="15" FontWeight="SemiBold" VerticalAlignment="Center" Margin="5"/>
+                <TextBox x:Name="tbResult" Width="300" FontSize="15" FontWeight="SemiBold" IsReadOnly="True" Background="#F0F8FF" Margin="5" />
+            </StackPanel>
+            <Button Content="Назад к первой задаче" HorizontalAlignment="Center" Margin="5" Width="200" Click="btnBack_Click"/>
+            <Button Content="переход на 3 задачу" x:Name ="btnGO3" HorizontalAlignment="Center" Margin="5" Width="200" Click="btnGO3_Click"/>
+        </StackPanel>
+
+
+    </Grid>
+</Page>

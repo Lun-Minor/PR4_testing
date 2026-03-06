@@ -93,7 +93,9 @@ namespace PR4_1_2
 
         private void btn_Go2SecondPage_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("scdcxc");
+            MainFrame.Navigate(new SecondPage());
+            MainFrame.Visibility = Visibility.Visible;
+            mainContent.Visibility = Visibility.Collapsed;
         }
     }
 }
