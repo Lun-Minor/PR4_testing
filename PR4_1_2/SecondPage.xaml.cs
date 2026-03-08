@@ -107,7 +107,7 @@ namespace PR4_1_2
             var mainWindow = Window.GetWindow(this) as MainWindow;
             if (mainWindow != null)
             {
-               // mainWindow.MainFrame.Navigate(new ThirdPage());
+                mainWindow.MainFrame.Navigate(new ThirdPage());
                 mainWindow.MainFrame.Visibility = Visibility.Visible;
                 mainWindow.mainContent.Visibility = Visibility.Collapsed;
             }
