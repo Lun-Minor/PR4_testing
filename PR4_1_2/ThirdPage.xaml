@@ -65,6 +65,7 @@ BorderBrush="Gray" BorderThickness="1" Background="#F9FAFB" Margin="5,5,5,102">
         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
             <Button Content="Вычислить" Width="160" Height="30" Margin="5" FontSize="14" Click="btnBuild_Click"/>
             <Button Content="Очистить" Width="160" Height="30" FontSize="14" Click="btnClear_Click"/>
+            <Button Content="Закрыть программу" Width="160" Height="30" FontSize="14" Click="btnClose"/>
         </StackPanel>
     </Grid>
 </Page>

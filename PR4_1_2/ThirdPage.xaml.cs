@@ -111,5 +111,10 @@ namespace PR4_1_2
             chart.Series["Series1"].Points.Clear();
             chart.Invalidate();
         }
+
+        private void btnClose(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }
